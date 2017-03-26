@@ -22,21 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn6-ir-LWw">
-                                <rect key="frame" x="163" y="296" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="btnSubmitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDg-cg-geW"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1y-Wr-be6">
                                 <rect key="frame" x="93" y="161" width="189" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRX-y0-B42">
-                                <rect key="frame" x="149" y="132" width="79" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRX-y0-B42">
+                                <rect key="frame" x="127" y="132" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,31 +40,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vk-PK-Cut">
-                                <rect key="frame" x="16" y="235" width="343" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vk-PK-Cut">
+                                <rect key="frame" x="16" y="235" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUj-hr-TX1">
+                                <rect key="frame" x="160" y="358" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="btnLogOutPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oeu-Xi-RpY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn6-ir-LWw">
+                                <rect key="frame" x="163" y="197" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="btnSubmitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDg-cg-geW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2vk-PK-Cut" firstAttribute="top" secondItem="Pn6-ir-LWw" secondAttribute="bottom" constant="8" id="0FV-l4-OLe"/>
                             <constraint firstItem="JRX-y0-B42" firstAttribute="top" secondItem="Wyl-R1-00u" secondAttribute="bottom" constant="22.5" id="1xb-ea-qyR"/>
                             <constraint firstItem="Wyl-R1-00u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="2ZF-X4-uVG"/>
                             <constraint firstItem="Y1y-Wr-be6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="77" id="AVO-8I-bhi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Pn6-ir-LWw" secondAttribute="trailing" constant="147" id="DMW-CC-Ng9"/>
                             <constraint firstItem="Y1y-Wr-be6" firstAttribute="top" secondItem="Wyl-R1-00u" secondAttribute="bottom" constant="51.5" id="Fmc-Pf-PpS"/>
-                            <constraint firstItem="2vk-PK-Cut" firstAttribute="top" secondItem="Y1y-Wr-be6" secondAttribute="bottom" constant="44" id="Hf2-jJ-8hd"/>
-                            <constraint firstItem="Pn6-ir-LWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="LW6-7x-VoB"/>
+                            <constraint firstItem="Pn6-ir-LWw" firstAttribute="top" secondItem="Y1y-Wr-be6" secondAttribute="bottom" constant="6" id="GsL-jc-noJ"/>
                             <constraint firstItem="Wyl-R1-00u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XVm-ey-AfO"/>
                             <constraint firstItem="2vk-PK-Cut" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="a1E-iu-uuC"/>
+                            <constraint firstItem="LUj-hr-TX1" firstAttribute="top" secondItem="2vk-PK-Cut" secondAttribute="bottom" constant="99" id="aOt-VU-IBv"/>
                             <constraint firstItem="2vk-PK-Cut" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ccv-rt-uz2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JRX-y0-B42" secondAttribute="trailing" constant="131" id="iBs-xn-Zht"/>
+                            <constraint firstItem="LUj-hr-TX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2i-77-tg5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y1y-Wr-be6" secondAttribute="trailing" constant="77" id="m99-5G-LzS"/>
-                            <constraint firstItem="JRX-y0-B42" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="uYa-Hi-w30"/>
+                            <constraint firstItem="Pn6-ir-LWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdL-ME-VJn"/>
+                            <constraint firstItem="JRX-y0-B42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtR-Qh-gf3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLogOut" destination="LUj-hr-TX1" id="DBL-7R-51Y"/>
                         <outlet property="btnSubmit" destination="Pn6-ir-LWw" id="Hvi-hF-z6J"/>
                         <outlet property="inputName" destination="Y1y-Wr-be6" id="1cK-l7-2XD"/>
                         <outlet property="lblMessage" destination="2vk-PK-Cut" id="CVi-Xb-Qra"/>
